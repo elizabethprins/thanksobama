@@ -132,6 +132,8 @@
       <div class="winkbrown"></div>
       <div class="eyebrown"></div>
       <div class="taupe"></div>
+      <div id="white4"></div>
+      <button class="button2" style="display:none">NOW CLICK HERE</button>
     </p>
     <p>
       <div id="white4"></div>
@@ -374,6 +376,9 @@
       <div class="steelgrey"></div>
       <div class="black"></div>
       <div class="lightgrey"></div>
+      <div id="white4"></div>
+      <button class="button1">CLICK HERE</button>
+      <button class="button3" style="display:none">CLICK HERE AGAIN</button>
     </p>
 
     <audio id="thanks" src="sounds/ThanksObama.m4r"></audio>
@@ -383,6 +388,8 @@
     <audio id="delish" src="sounds/Too-Delicious.m4r"></audio>
 
     <script>
+
+      // $(".button2").hide()
 
       $(document).ready(function() {
 
@@ -414,6 +421,20 @@
 
         $(".jaw").on("mouseover", function() {
           document.getElementById('courage').play();
+        });
+
+        $(".button1").click(function() {
+          $(".button2").show();
+          $(".button1").hide();
+        });
+
+        $(".button2").click(function() {
+          $(".button3").show();
+          $(".button2").hide();
+        });
+
+        $(".button3").click(function() {
+          location.reload();
         });
 
       });

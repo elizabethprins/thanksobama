@@ -41,133 +41,130 @@ div {
 
 
 
-#lightergrey {
-    background-color:#E2E2E2;
-    color:#FEFEFE;
+.lightergrey {
+  background-color:#E2E2E2;
 }
 
-#lightgrey {
-    background-color:#A7A8A3;
-    color:#FFFFFF;
+.lightgrey {
+  background-color:#A7A8A3;
 }
 
-#grey {
-    background-color:#8C8D88;
-    color:#FEFEFE;
+.grey {
+  background-color:#8C8D88;
 }
 
-#white {
+.white {
   background-color: #FFFFFF;
 }
 
-#coldgrey {
+.coldgrey {
   background-color: #737377;
 }
 
-#lightblack {
+.lightblack {
   background-color: #181C1B;
 }
 
-#black {
+.black {
   background-color: #040404;
 }
 
-#brown {
+.brown {
   background-color: #391D16;
 }
 
-#eyebrown {
+.eyebrown {
   background-color: #522110;
 }
 
-#greengrey {
+.greengrey {
   background-color: #535642;
 }
 
-#winkbrown {
+.winkbrown {
   background-color: #6E3A1B;
 }
 
-#temple {
+.temple {
   background-color: #AA5427;
 }
 
-#cheek {
+.cheek {
   background-color: #C15A18;
 }
 
-#hairline {
+.hairline {
   background-color: #E2702E;
 }
 
-#red {
+.red {
   background-color: #701E11;
 }
 
-#taupe {
+.taupe {
   background-color: #8D7153;
 }
 
-#mustard {
+.mustard {
   background-color: #C98033;
 }
 
-#forehead {
+.forehead {
   background-color: #E38D54;
 }
 
-#nosebridge {
+.nosebridge {
   background-color: #C17231;
 }
 
-#steelgrey {
+.steelgrey {
   background-color: #35383F;
 }
 
-#pink {
+.pink {
   background-color: #EC9E6D;
 }
 
-#sand {
+.sand {
   background-color: #AC6B36;
 }
 
-#brow {
+.brow {
   background-color: #BF8A68;
 }
 
-#softwink {
+.softwink {
   background-color: #905539;
 }
 
-#eartop {
+.eartop {
   background-color: #E4C3A9;
 }
 
-#jaw {
+.jaw {
   background-color: #91481B;
 }
 
-#ear {
+.ear {
   background-color: #C28C67;
 }
 
-#bright {
+.bright {
   background-color: #FDF7E2;
 }
 
-#neck {
+.neck {
   background-color: #C4AB91;
 }
 
-#wine {
+.wine {
   background-color: #AD5443;
 }
 
-#corner {
+.corner {
   background-color: #535548;
 }
 
-#tooth {
+.tooth {
   background-color: #DFC7AD;
 }

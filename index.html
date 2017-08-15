@@ -4,8 +4,11 @@
 	  <title>Thanks, Obama!</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
     <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
 	</head>
 	<body>
+    <img src="images/american-flag.png" alt="flag" width="90%" height="90%" style="display:none">
+    <img src="images/thankso.png" id="slider" alt="thankso" width="90%" height="auto" style="display:none">
     <p>
       <div id="white1"></div>
       <div class="lightergrey"></div>
@@ -24,6 +27,7 @@
       <div class="black"></div>
       <div class="black"></div>
       <div class="coldgrey"></div>
+      <button class="button2" style="display:none">NOW CLICK HERE</button>
     </p>
     <p>
       <div id="white2"></div>
@@ -132,8 +136,6 @@
       <div class="winkbrown"></div>
       <div class="eyebrown"></div>
       <div class="taupe"></div>
-      <div id="white4"></div>
-      <button class="button2" style="display:none">NOW CLICK HERE</button>
     </p>
     <p>
       <div id="white4"></div>
@@ -357,6 +359,9 @@
       <div class="black"></div>
       <div class="grey"></div>
       <div class="grey"></div>
+      <div id="white1"></div>
+      <button class="button1">CLICK HERE</button>
+      <button class="button3" style="display:none">Reset!</button>
     </p>
     <p>
       <div class="lightblack"></div>
@@ -376,9 +381,6 @@
       <div class="steelgrey"></div>
       <div class="black"></div>
       <div class="lightgrey"></div>
-      <div id="white4"></div>
-      <button class="button1">CLICK HERE</button>
-      <button class="button3" style="display:none">CLICK HERE AGAIN</button>
     </p>
 
     <audio id="thanks" src="sounds/ThanksObama.m4r"></audio>
@@ -387,57 +389,5 @@
     <audio id="america" src="sounds/TheAmericaTeam.m4r"></audio>
     <audio id="delish" src="sounds/Too-Delicious.m4r"></audio>
 
-    <script>
-
-      // $(".button2").hide()
-
-      $(document).ready(function() {
-
-        $("div").on("mouseenter", function() {
-          if (this.id.includes("white") == false) {
-            $(this).fadeOut('slow');
-          };
-        });
-
-        $(".tooth").on("mouseover", function() {
-          document.getElementById('america').play();
-        });
-
-        $(".eyebrown").on("mouseover", function() {
-          document.getElementById('thanks').play();
-        });
-
-        $(".sand").on("mouseover", function() {
-          document.getElementById('ahhh').play();
-        });
-
-        $(".lightergrey").on("mouseover", function() {
-          document.getElementById('thanks').play();
-        });
-
-        $(".lightblack").on("mouseover", function() {
-          document.getElementById('delish').play();
-        });
-
-        $(".jaw").on("mouseover", function() {
-          document.getElementById('courage').play();
-        });
-
-        $(".button1").click(function() {
-          $(".button2").show();
-          $(".button1").hide();
-        });
-
-        $(".button2").click(function() {
-          $(".button3").show();
-          $(".button2").hide();
-        });
-
-        $(".button3").click(function() {
-          location.reload();
-        });
-
-      });
-    </script>
 	</body>
 </html>

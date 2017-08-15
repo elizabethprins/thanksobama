@@ -8,6 +8,7 @@ p {
 }
 
 div {
+  z-index: 1;
   height:21px;
   width:20px;
   display: inline-block;
@@ -15,6 +16,63 @@ div {
   margin: -2px;
 }
 
+img {
+  margin-left: -50px;
+  z-index: 2;
+  position:absolute;
+}
+
+button {
+  font-weight: bold;
+  font-size: 12px;
+  position: absolute;
+  background-color: yellow;
+  border-color: blue;
+  border-radius: 2px;
+  color: blue;
+  width: 150px;
+  height: 30px;
+  cursor: pointer;
+}
+button:hover {
+  -webkit-animation:flashing 0.3s infinite;
+  -ms-animation:flashing 0.3s infinite;
+  -o-animation:flashing 0.3s infinite;
+  animation:flashing 0.3s infinite;
+}
+@-webkit-keyframes flashing {
+0% {background-color: yellow;}
+10% {background-color: orange; border-color: red; border-width: thick;}
+}
+@-ms-keyframes flashing {
+0% {background-color: yellow;}
+50% {background-color: orange; border-color: red; border-width: thick;}
+}
+@-o-keyframes flashing {
+0% {background-color: yellow;}
+50% {background-color: orange; border-color: red; border-width: thick;}
+}
+@keyframes flashing {
+0% {background-color: yellow;}
+50% {background-color: orange; border-color: red; border-width: thick;}
+}
+
+.button1 {
+  position: absolute;
+  right: 100px;
+}
+.button2 {
+  position: absolute;
+  left: 10px;
+}
+.button3 {
+  background-color: #E2E2E2;
+  border-color: black;
+  color: black;
+  border-width: thin;
+  position: absolute;
+  right: 100px;
+}
 
 #white1 {
   width: 160px;

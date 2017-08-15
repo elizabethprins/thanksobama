@@ -54,6 +54,7 @@ $(document).ready(function() {
   });
 
   $(".button3").click(function() {
+    document.getElementById('reset').play();
     $("img").show();
     $.when($("#slider").animate({
       "bottom": "-=100%",

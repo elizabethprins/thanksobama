@@ -1,227 +1,266 @@
 body {
-  margin-top: 40px;
-  margin-left: 100px;
+    --size: 5vmin;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        --size: 3.5vmin;
+    }
 }
 
 p {
-  margin: 2px;
+    display: flex;
+    margin: 0;
 }
 
-div {
-  z-index: 1;
-  height:21px;
-  width:20px;
-  display: inline-block;
-  vertical-align: middle;
-  margin: -2px;
+span {
+    height: var(--size);
+    width: var(--size);
+    display: inline-flex;
+    position: relative;
+    background: #E2E2E2;
+    transition: background .2s;
 }
 
-img {
-  margin-left: -50px;
-  z-index: 2;
-  position:absolute;
+span:before, span:after {
+    content: '';
+    position: absolute;
+}
+
+span:before {
+    top: 5%;
+    left: 5%;
+    right: 5%;
+    bottom: 5%;
+    box-shadow: inset 0 -2px 6px rgba(0,0,0,0.4);
+    border-radius: 50%;
+}
+
+span:after {
+    top: 20%;
+    right: 17%;
+    height: 75%;
+    width: 75%;
+    border-radius: 50%;
+    box-shadow: 1px -2px 0px 0px  rgba(255,255,255, .9);
+    cursor: pointer;
+}
+
+.popped:before {
+    animation: pop-before .2s forwards;
+}
+
+.popped:after {
+    animation: pop-after .2s forwards;
+}
+
+@keyframes pop-before {
+    50% { height: 100%; width: 100%; }
+    100% { box-shadow: inset 0 0 6px rgba(0,0,0,.2); }
+}
+
+@keyframes pop-after {
+    50% { box-shadow: 5px -5px 0px 0px  rgba(255,255,255, .9); }
+    100% { opacity: 0; }
+}
+
+.background, .slider {
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.background {
+    height: 100%;
+}
+
+.background.is-visible {
+    display: block;
+}
+
+.slider {
+    width: 100%;
+}
+
+.slider.is-visible {
+    display: block;
+    animation: slideDown 5s ease-in forwards;
+}
+
+@keyframes slideDown {
+    to { transform: translateY(100vw); }
 }
 
 button {
-  font-weight: bold;
-  font-size: 12px;
-  position: absolute;
-  background-color: yellow;
-  border-color: blue;
-  border-radius: 2px;
-  color: blue;
-  width: 150px;
-  height: 30px;
-  cursor: pointer;
+    padding: .25rem 2rem;
+    margin-top: 1rem;
+    background: gold;
+    color: rebeccapurple;
+    border: 2px solid rebeccapurple;
+    border-radius: 2px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
 }
+
 button:hover {
-  -webkit-animation:flashing 0.3s infinite;
-  -ms-animation:flashing 0.3s infinite;
-  -o-animation:flashing 0.3s infinite;
-  animation:flashing 0.3s infinite;
+    animation: flashing .3s infinite;
 }
-@-webkit-keyframes flashing {
-0% {background-color: yellow;}
-10% {background-color: orange; border-color: red; border-width: thick;}
-}
-@-ms-keyframes flashing {
-0% {background-color: yellow;}
-50% {background-color: orange; border-color: red; border-width: thick;}
-}
-@-o-keyframes flashing {
-0% {background-color: yellow;}
-50% {background-color: orange; border-color: red; border-width: thick;}
-}
+
 @keyframes flashing {
-0% {background-color: yellow;}
-50% {background-color: orange; border-color: red; border-width: thick;}
+    50% { color: gold; background: rebeccapurple; border: 2px solid gold; }
 }
 
-.button1 {
-  position: absolute;
-  right: 100px;
-}
-.button2 {
-  position: absolute;
-  left: 10px;
-}
-.button3 {
-  background-color: #E2E2E2;
-  border-color: black;
-  color: black;
-  border-width: thin;
-  position: absolute;
-  right: 100px;
+/* LINE INDENTATION  */
+.indent-1 {
+    padding-left: calc(8 * var(--size));
 }
 
-#white1 {
-  width: 160px;
+.indent-2 {
+    padding-left: calc(6 * var(--size));
 }
 
-#white2 {
-  width: 120px;
+.indent-3 {
+    padding-left: calc(4 * var(--size));
 }
 
-#white3 {
-  width: 80px;
+.indent-4 {
+    padding-left: calc(3 * var(--size));
 }
 
-#white4 {
-  width: 60px;
+.indent-5 {
+    padding-left: calc(5 * var(--size));
 }
 
-#white5 {
-  width: 100px;
+.indent-6 {
+    padding-left: calc(2 * var(--size))
 }
 
-#white6 {
-  width: 40px;
+/* COLORS */
+.lightergrey.popped {
+    background-color:#E2E2E2;
 }
 
-.lightergrey {
-  background-color:#E2E2E2;
+.lightgrey.popped {
+    background-color:#A7A8A3;
 }
 
-.lightgrey {
-  background-color:#A7A8A3;
+.grey.popped {
+    background-color:#8C8D88;
 }
 
-.grey {
-  background-color:#8C8D88;
+.white.popped  {
+    background-color: #FFFFFF;
 }
 
-.white {
-  background-color: #FFFFFF;
+.coldgrey.popped {
+    background-color: #737377;
 }
 
-.coldgrey {
-  background-color: #737377;
+.lightblack.popped {
+    background-color: #181C1B;
 }
 
-.lightblack {
-  background-color: #181C1B;
+.black.popped {
+    background-color: #040404;
 }
 
-.black {
-  background-color: #040404;
+.brown.popped {
+    background-color: #391D16;
 }
 
-.brown {
-  background-color: #391D16;
+.eyebrown.popped  {
+    background-color: #522110;
 }
 
-.eyebrown {
-  background-color: #522110;
+.greengrey.popped {
+    background-color: #535642;
 }
 
-.greengrey {
-  background-color: #535642;
+.winkbrown.popped {
+    background-color: #6E3A1B;
 }
 
-.winkbrown {
-  background-color: #6E3A1B;
+.temple.popped  {
+    background-color: #AA5427;
 }
 
-.temple {
-  background-color: #AA5427;
+.cheek.popped {
+    background-color: #C15A18;
 }
 
-.cheek {
-  background-color: #C15A18;
+.hairline.popped {
+    background-color: #E2702E;
 }
 
-.hairline {
-  background-color: #E2702E;
+.red.popped {
+    background-color: #701E11;
 }
 
-.red {
-  background-color: #701E11;
+.taupe.popped {
+    background-color: #8D7153;
 }
 
-.taupe {
-  background-color: #8D7153;
+.mustard.popped {
+    background-color: #C98033;
 }
 
-.mustard {
-  background-color: #C98033;
+.forehead.popped  {
+    background-color: #E38D54;
 }
 
-.forehead {
-  background-color: #E38D54;
+.nosebridge.popped {
+    background-color: #C17231;
 }
 
-.nosebridge {
-  background-color: #C17231;
+.steelgrey.popped {
+    background-color: #35383F;
 }
 
-.steelgrey {
-  background-color: #35383F;
+.pink.popped {
+    background-color: #EC9E6D;
 }
 
-.pink {
-  background-color: #EC9E6D;
-}
-
-.sand {
+.sand.popped {
   background-color: #AC6B36;
 }
 
-.brow {
-  background-color: #BF8A68;
+.brow.popped {
+    background-color: #BF8A68;
 }
 
-.softwink {
-  background-color: #905539;
+.softwink.popped {
+    background-color: #905539;
 }
 
-.eartop {
-  background-color: #E4C3A9;
+.eartop.popped {
+    background-color: #E4C3A9;
 }
 
-.jaw {
-  background-color: #91481B;
+.jaw.popped {
+    background-color: #91481B;
 }
 
-.ear {
-  background-color: #C28C67;
+.ear.popped {
+    background-color: #C28C67;
 }
 
-.bright {
-  background-color: #FDF7E2;
+.bright.popped {
+    background-color: #FDF7E2;
 }
 
-.neck {
-  background-color: #C4AB91;
+.neck.popped {
+    background-color: #C4AB91;
 }
 
-.wine {
-  background-color: #AD5443;
+.wine.popped {
+    background-color: #AD5443;
 }
 
-.corner {
-  background-color: #535548;
+.corner.popped {
+    background-color: #535548;
 }
 
-.tooth {
-  background-color: #DFC7AD;
+.tooth.popped {
+    background-color: #DFC7AD;
 }

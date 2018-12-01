@@ -1,394 +1,378 @@
 <!DOCTYPE html>
-<html>
-  <head>
-	  <title>Thanks, Obama!</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
-    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="script.js"></script>
-	</head>
-	<body>
-    <img src="images/american-flag.png" alt="flag" width="90%" height="90%" style="display:none">
-    <img src="images/thankso.png" id="slider" alt="thankso" width="90%" height="auto" style="display:none">
-    <p>
-      <div id="white1"></div>
-      <div class="lightergrey"></div>
-      <div class="lightgrey"></div>
-      <div class="grey"></div>
-      <div class="grey"></div>
-      <div class="lightergrey"></div>
-    </p>
-    <p>
-      <div id="white2"></div>
-      <div class="lightergrey"></div>
-      <div class="coldgrey"></div>
-      <div class="lightblack"></div>
-      <div class="black"></div>
-      <div class="black"></div>
-      <div class="black"></div>
-      <div class="black"></div>
-      <div class="coldgrey"></div>
-      <button class="button2" style="display:none">NOW CLICK HERE</button>
-    </p>
-    <p>
-      <div id="white2"></div>
-      <div class="lightblack"></div>
-      <div class="black"></div>
-      <div class="black"></div>
-      <div class="brown"></div>
-      <div class="eyebrown"></div>
-      <div class="brown"></div>
-      <div class="brown"></div>
-      <div class="black"></div>
-      <div class="greengrey"></div>
-    </p>
-    <p>
-      <div id="white3"></div>
-      <div class="lightergrey"></div>
-      <div class="lightblack"></div>
-      <div class="black"></div>
-      <div class="winkbrown"></div>
-      <div class="cheek"></div>
-      <div class="cheek"></div>
-      <div class="hairline"></div>
-      <div class="hairline"></div>
-      <div class="hairline"></div>
-      <div class="hairline"></div>
-      <div class="red"></div>
-      <div class="taupe"></div>
-    </p>
-    <p>
-      <div id="white3"></div>
-      <div class="coldgrey"></div>
-      <div class="black"></div>
-      <div class="eyebrown"></div>
-      <div class="temple"></div>
-      <div class="mustard"></div>
-      <div class="forehead"></div>
-      <div class="forehead"></div>
-      <div class="forehead"></div>
-      <div class="forehead"></div>
-      <div class="forehead"></div>
-      <div class="nosebridge"></div>
-      <div class="eyebrown"></div>
-      <div class="lightgrey"></div>
-    </p>
-    <p>
-      <div id="white3"></div>
-      <div class="steelgrey"></div>
-      <div class="black"></div>
-      <div class="winkbrown"></div>
-      <div class="temple"></div>
-      <div class="mustard"></div>
-      <div class="pink"></div>
-      <div class="pink"></div>
-      <div class="forehead"></div>
-      <div class="forehead"></div>
-      <div class="pink"></div>
-      <div class="forehead"></div>
-      <div class="red"></div>
-      <div class="grey"></div>
-    </p>
-    <p>
-      <div id="white3"></div>
-      <div class="steelgrey"></div>
-      <div class="brown"></div>
-      <div class="sand"></div>
-      <div class="nosebridge"></div>
-      <div class="nosebridge"></div>
-      <div class="brow"></div>
-      <div class="brow"></div>
-      <div class="pink"></div>
-      <div class="pink"></div>
-      <div class="brow"></div>
-      <div class="softwink"></div>
-      <div class="winkbrown"></div>
-      <div class="grey"></div>
-    </p>
-    <p>
-      <div id="white3"></div>
-      <div class="steelgrey"></div>
-      <div class="eyebrown"></div>
-      <div class="mustard"></div>
-      <div class="sand"></div>
-      <div class="winkbrown"></div>
-      <div class="eyebrown"></div>
-      <div class="eyebrown"></div>
-      <div class="brow"></div>
-      <div class="pink"></div>
-      <div class="winkbrown"></div>
-      <div class="eyebrown"></div>
-      <div class="brown"></div>
-      <div class="grey"></div>
-    </p>
-    <p>
-      <div id="white4"></div>
-      <div class="eartop"></div>
-      <div class="eyebrown"></div>
-      <div class="eyebrown"></div>
-      <div class="nosebridge"></div>
-      <div class="temple"></div>
-      <div class="winkbrown"></div>
-      <div class="eyebrown"></div>
-      <div class="jaw"></div>
-      <div class="nosebridge"></div>
-      <div class="nosebridge"></div>
-      <div class="winkbrown"></div>
-      <div class="winkbrown"></div>
-      <div class="eyebrown"></div>
-      <div class="taupe"></div>
-    </p>
-    <p>
-      <div id="white4"></div>
-      <div class="ear"></div>
-      <div class="nosebridge"></div>
-      <div class="winkbrown"></div>
-      <div class="temple"></div>
-      <div class="nosebridge"></div>
-      <div class="sand"></div>
-      <div class="mustard"></div>
-      <div class="forehead"></div>
-      <div class="mustard"></div>
-      <div class="hairline"></div>
-      <div class="temple"></div>
-      <div class="sand"></div>
-      <div class="nosebridge"></div>
-      <div class="softwink"></div>
-      <div class="bright"></div>
-    </p>
-    <p>
-      <div id="white4"></div>
-      <div class="ear"></div>
-      <div class="hairline"></div>
-      <div class="temple"></div>
-      <div class="jaw"></div>
-      <div class="nosebridge"></div>
-      <div class="pink"></div>
-      <div class="forehead"></div>
-      <div class="nosebridge"></div>
-      <div class="sand"></div>
-      <div class="forehead"></div>
-      <div class="sand"></div>
-      <div class="temple"></div>
-      <div class="forehead"></div>
-      <div class="nosebridge"></div>
-    </p>
-    <p>
-      <div id="white4"></div>
-      <div class="eartop"></div>
-      <div class="temple"></div>
-      <div class="nosebridge"></div>
-      <div class="jaw"></div>
-      <div class="cheek"></div>
-      <div class="forehead"></div>
-      <div class="hairline"></div>
-      <div class="nosebridge"></div>
-      <div class="temple"></div>
-      <div class="temple"></div>
-      <div class="jaw"></div>
-      <div class="jaw"></div>
-      <div class="cheek"></div>
-      <div class="ear"></div>
-    </p>
-    <p>
-      <div id="white3"></div>
-      <div class="neck"></div>
-      <div class="jaw"></div>
-      <div class="jaw"></div>
-      <div class="cheek"></div>
-      <div class="temple"></div>
-      <div class="jaw"></div>
-      <div class="sand"></div>
-      <div class="nosebridge"></div>
-      <div class="wine"></div>
-      <div class="softwink"></div>
-      <div class="winkbrown"></div>
-      <div class="jaw"></div>
-      <div class="neck"></div>
-    </p>
-    <p>
-      <div id="white3"></div>
-      <div class="bright"></div>
-      <div class="wine"></div>
-      <div class="jaw"></div>
-      <div class="cheek"></div>
-      <div class="nosebridge"></div>
-      <div class="winkbrown"></div>
-      <div class="corner"></div>
-      <div class="neck"></div>
-      <div class="tooth"></div>
-      <div class="taupe"></div>
-      <div class="eyebrown"></div>
-      <div class="jaw"></div>
-      <div class="lightergrey"></div>
-    </p>
-    <p>
-      <div id="white5"></div>
-      <div class="ear"></div>
-      <div class="red"></div>
-      <div class="jaw"></div>
-      <div class="sand"></div>
-      <div class="nosebridge"></div>
-      <div class="ear"></div>
-      <div class="wine"></div>
-      <div class="temple"></div>
-      <div class="temple"></div>
-      <div class="jaw"></div>
-      <div class="nosebridge"></div>
-    </p>
-    <p>
-      <div id="white3"></div>
-      <div class="bright"></div>
-      <div class="bright"></div>
-      <div class="neck"></div>
-      <div class="red"></div>
-      <div class="jaw"></div>
-      <div class="nosebridge"></div>
-      <div class="forehead"></div>
-      <div class="forehead"></div>
-      <div class="nosebridge"></div>
-      <div class="cheek"></div>
-      <div class="jaw"></div>
-      <div class="lightgrey"></div>
-    </p>
-    <p>
-      <div id="white3"></div>
-      <div class="greengrey"></div>
-      <div class="steelgrey"></div>
-      <div class="white"></div>
-      <div class="bright"></div>
-      <div class="jaw"></div>
-      <div class="red"></div>
-      <div class="nosebridge"></div>
-      <div class="neck"></div>
-      <div class="forehead"></div>
-      <div class="cheek"></div>
-      <div class="ear"></div>
-    </p>
-    <p>
-      <div id="white4"></div>
-      <div class="lightgrey"></div>
-      <div class="black"></div>
-      <div class="black"></div>
-      <div class="steelgrey"></div>
-      <div class="white"></div>
-      <div class="white"></div>
-      <div class="taupe"></div>
-      <div class="eyebrown"></div>
-      <div class="winkbrown"></div>
-      <div class="winkbrown"></div>
-      <div class="corner"></div>
-      <div class="lightergrey"></div>
-    </p>
-    <p>
-      <div id="white6"></div>
-      <div class="grey"></div>
-      <div class="black"></div>
-      <div class="black"></div>
-      <div class="black"></div>
-      <div class="black"></div>
-      <div class="greengrey"></div>
-      <div class="white"></div>
-      <div class="white"></div>
-      <div class="lightgrey"></div>
-      <div class="eyebrown"></div>
-      <div class="brown"></div>
-      <div class="lightgrey"></div>
-    </p>
-    <p>
-      <div class="lightergrey"></div>
-      <div class="steelgrey"></div>
-      <div class="black"></div>
-      <div class="lightblack"></div>
-      <div class="lightblack"></div>
-      <div class="black"></div>
-      <div class="black"></div>
-      <div class="black"></div>
-      <div class="grey"></div>
-      <div class="white"></div>
-      <div class="white"></div>
-      <div class="bright"></div>
-      <div class="jaw"></div>
-      <div class="eartop"></div>
-    </p>
-    <p>
-      <div class="brown"></div>
-      <div class="black"></div>
-      <div class="lightblack"></div>
-      <div class="lightblack"></div>
-      <div class="lightblack"></div>
-      <div class="black"></div>
-      <div class="black"></div>
-      <div class="black"></div>
-      <div class="black"></div>
-      <div class="lightergrey"></div>
-      <div class="white"></div>
-      <div class="white"></div>
-      <div class="eartop"></div>
-      <div class="neck"></div>
-    </p>
-    <p>
-      <div class="lightblack"></div>
-      <div class="lightblack"></div>
-      <div class="lightblack"></div>
-      <div class="lightblack"></div>
-      <div class="lightblack"></div>
-      <div class="black"></div>
-      <div class="black"></div>
-      <div class="black"></div>
-      <div class="black"></div>
-      <div class="steelgrey"></div>
-      <div class="white"></div>
-      <div class="white"></div>
-      <div class="grey"></div>
-      <div class="greengrey"></div>
-      <div class="bright"></div>
-    </p>
-    <p>
-      <div class="lightblack"></div>
-      <div class="lightblack"></div>
-      <div class="lightblack"></div>
-      <div class="lightblack"></div>
-      <div class="black"></div>
-      <div class="black"></div>
-      <div class="black"></div>
-      <div class="black"></div>
-      <div class="black"></div>
-      <div class="black"></div>
-      <div class="lightgrey"></div>
-      <div class="lightergrey"></div>
-      <div class="black"></div>
-      <div class="grey"></div>
-      <div class="grey"></div>
-      <div id="white1"></div>
-      <button class="button1">CLICK HERE</button>
-      <button class="button3" style="display:none">Reset!</button>
-    </p>
-    <p>
-      <div class="lightblack"></div>
-      <div class="lightblack"></div>
-      <div class="lightblack"></div>
-      <div class="lightblack"></div>
-      <div class="black"></div>
-      <div class="black"></div>
-      <div class="black"></div>
-      <div class="black"></div>
-      <div class="black"></div>
-      <div class="black"></div>
-      <div class="black"></div>
-      <div class="lightergrey"></div>
-      <div class="lightgrey"></div>
-      <div class="grey"></div>
-      <div class="steelgrey"></div>
-      <div class="black"></div>
-      <div class="lightgrey"></div>
-    </p>
+<html lang="en">
+    <head>
+        <title>Thanks, Obama!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css"/>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <div class="president" id="demo">
+            <p class="indent-1">
+                <span class="lightergrey"></span>
+                <span class="lightgrey"></span>
+                <span class="grey"></span>
+                <span class="grey"></span>
+                <span class="lightergrey"></span>
+            </p>
+            <p class="indent-2">
+                <span class="lightergrey"></span>
+                <span class="coldgrey"></span>
+                <span class="lightblack"></span>
+                <span class="black"></span>
+                <span class="black"></span>
+                <span class="black"></span>
+                <span class="black"></span>
+                <span class="coldgrey"></span>
+            </p>
+            <p class="indent-2">
+                <span class="lightblack"></span>
+                <span class="black"></span>
+                <span class="black"></span>
+                <span class="brown"></span>
+                <span class="eyebrown"></span>
+                <span class="brown"></span>
+                <span class="brown"></span>
+                <span class="black"></span>
+                <span class="greengrey"></span>
+            </p>
+            <p class="indent-3">
+                <span class="lightergrey"></span>
+                <span class="lightblack"></span>
+                <span class="black"></span>
+                <span class="winkbrown"></span>
+                <span class="cheek"></span>
+                <span class="cheek"></span>
+                <span class="hairline"></span>
+                <span class="hairline"></span>
+                <span class="hairline"></span>
+                <span class="hairline"></span>
+                <span class="red"></span>
+                <span class="taupe"></span>
+            </p>
+            <p class="indent-3">
+                <span class="coldgrey"></span>
+                <span class="black"></span>
+                <span class="eyebrown"></span>
+                <span class="temple"></span>
+                <span class="mustard"></span>
+                <span class="forehead"></span>
+                <span class="forehead"></span>
+                <span class="forehead"></span>
+                <span class="forehead"></span>
+                <span class="forehead"></span>
+                <span class="nosebridge"></span>
+                <span class="eyebrown"></span>
+                <span class="lightgrey"></span>
+            </p>
+            <p class="indent-3">
+                <span class="steelgrey"></span>
+                <span class="black"></span>
+                <span class="winkbrown"></span>
+                <span class="temple"></span>
+                <span class="mustard"></span>
+                <span class="pink"></span>
+                <span class="pink"></span>
+                <span class="forehead"></span>
+                <span class="forehead"></span>
+                <span class="pink"></span>
+                <span class="forehead"></span>
+                <span class="red"></span>
+                <span class="grey"></span>
+            </p>
+            <p class="indent-3">
+                <span class="steelgrey"></span>
+                <span class="brown"></span>
+                <span class="sand"></span>
+                <span class="nosebridge"></span>
+                <span class="nosebridge"></span>
+                <span class="brow"></span>
+                <span class="brow"></span>
+                <span class="pink"></span>
+                <span class="pink"></span>
+                <span class="brow"></span>
+                <span class="softwink"></span>
+                <span class="winkbrown"></span>
+                <span class="grey"></span>
+            </p>
+            <p class="indent-3">
+                <span class="steelgrey"></span>
+                <span class="eyebrown"></span>
+                <span class="mustard"></span>
+                <span class="sand"></span>
+                <span class="winkbrown"></span>
+                <span class="eyebrown"></span>
+                <span class="eyebrown"></span>
+                <span class="brow"></span>
+                <span class="pink"></span>
+                <span class="winkbrown"></span>
+                <span class="eyebrown"></span>
+                <span class="brown"></span>
+                <span class="grey"></span>
+            </p>
+            <p class="indent-4">
+                <span class="eartop"></span>
+                <span class="eyebrown"></span>
+                <span class="eyebrown"></span>
+                <span class="nosebridge"></span>
+                <span class="temple"></span>
+                <span class="winkbrown"></span>
+                <span class="eyebrown"></span>
+                <span class="jaw"></span>
+                <span class="nosebridge"></span>
+                <span class="nosebridge"></span>
+                <span class="winkbrown"></span>
+                <span class="winkbrown"></span>
+                <span class="eyebrown"></span>
+                <span class="taupe"></span>
+            </p>
+            <p class="indent-4">
+                <span class="ear"></span>
+                <span class="nosebridge"></span>
+                <span class="winkbrown"></span>
+                <span class="temple"></span>
+                <span class="nosebridge"></span>
+                <span class="sand"></span>
+                <span class="mustard"></span>
+                <span class="forehead"></span>
+                <span class="mustard"></span>
+                <span class="hairline"></span>
+                <span class="temple"></span>
+                <span class="sand"></span>
+                <span class="nosebridge"></span>
+                <span class="softwink"></span>
+                <span class="bright"></span>
+            </p>
+            <p class="indent-4">
+                <span class="ear"></span>
+                <span class="hairline"></span>
+                <span class="temple"></span>
+                <span class="jaw"></span>
+                <span class="nosebridge"></span>
+                <span class="pink"></span>
+                <span class="forehead"></span>
+                <span class="nosebridge"></span>
+                <span class="sand"></span>
+                <span class="forehead"></span>
+                <span class="sand"></span>
+                <span class="temple"></span>
+                <span class="forehead"></span>
+                <span class="nosebridge"></span>
+            </p>
+            <p class="indent-4">
+                <span class="eartop"></span>
+                <span class="temple"></span>
+                <span class="nosebridge"></span>
+                <span class="jaw"></span>
+                <span class="cheek"></span>
+                <span class="forehead"></span>
+                <span class="hairline"></span>
+                <span class="nosebridge"></span>
+                <span class="temple"></span>
+                <span class="temple"></span>
+                <span class="jaw"></span>
+                <span class="jaw"></span>
+                <span class="cheek"></span>
+                <span class="ear"></span>
+            </p>
+            <p class="indent-3">
+                <span class="neck"></span>
+                <span class="jaw"></span>
+                <span class="jaw"></span>
+                <span class="cheek"></span>
+                <span class="temple"></span>
+                <span class="jaw"></span>
+                <span class="sand"></span>
+                <span class="nosebridge"></span>
+                <span class="wine"></span>
+                <span class="softwink"></span>
+                <span class="winkbrown"></span>
+                <span class="jaw"></span>
+                <span class="neck"></span>
+            </p>
+            <p class="indent-3">
+                <span class="bright"></span>
+                <span class="wine"></span>
+                <span class="jaw"></span>
+                <span class="cheek"></span>
+                <span class="nosebridge"></span>
+                <span class="winkbrown"></span>
+                <span class="corner"></span>
+                <span class="neck"></span>
+                <span class="tooth"></span>
+                <span class="taupe"></span>
+                <span class="eyebrown"></span>
+                <span class="jaw"></span>
+                <span class="lightergrey"></span>
+            </p>
+            <p class="indent-5">
+                <span class="ear"></span>
+                <span class="red"></span>
+                <span class="jaw"></span>
+                <span class="sand"></span>
+                <span class="nosebridge"></span>
+                <span class="ear"></span>
+                <span class="wine"></span>
+                <span class="temple"></span>
+                <span class="temple"></span>
+                <span class="jaw"></span>
+                <span class="nosebridge"></span>
+            </p>
+            <p class="indent-3">
+                <span class="bright"></span>
+                <span class="bright"></span>
+                <span class="neck"></span>
+                <span class="red"></span>
+                <span class="jaw"></span>
+                <span class="nosebridge"></span>
+                <span class="forehead"></span>
+                <span class="forehead"></span>
+                <span class="nosebridge"></span>
+                <span class="cheek"></span>
+                <span class="jaw"></span>
+                <span class="lightgrey"></span>
+            </p>
+            <p class="indent-3">
+                <span class="greengrey"></span>
+                <span class="steelgrey"></span>
+                <span class="white"></span>
+                <span class="bright"></span>
+                <span class="jaw"></span>
+                <span class="red"></span>
+                <span class="nosebridge"></span>
+                <span class="neck"></span>
+                <span class="forehead"></span>
+                <span class="cheek"></span>
+                <span class="ear"></span>
+            </p>
+            <p class="indent-4">
+                <span class="lightgrey"></span>
+                <span class="black"></span>
+                <span class="black"></span>
+                <span class="steelgrey"></span>
+                <span class="white"></span>
+                <span class="white"></span>
+                <span class="taupe"></span>
+                <span class="eyebrown"></span>
+                <span class="winkbrown"></span>
+                <span class="winkbrown"></span>
+                <span class="corner"></span>
+                <span class="lightergrey"></span>
+            </p>
+            <p class="indent-6">
+                <span class="grey"></span>
+                <span class="black"></span>
+                <span class="black"></span>
+                <span class="black"></span>
+                <span class="black"></span>
+                <span class="greengrey"></span>
+                <span class="white"></span>
+                <span class="white"></span>
+                <span class="lightgrey"></span>
+                <span class="eyebrown"></span>
+                <span class="brown"></span>
+                <span class="lightgrey"></span>
+            </p>
+            <p class="indent-0">
+                <span class="lightergrey"></span>
+                <span class="steelgrey"></span>
+                <span class="black"></span>
+                <span class="lightblack"></span>
+                <span class="lightblack"></span>
+                <span class="black"></span>
+                <span class="black"></span>
+                <span class="black"></span>
+                <span class="grey"></span>
+                <span class="white"></span>
+                <span class="white"></span>
+                <span class="bright"></span>
+                <span class="jaw"></span>
+                <span class="eartop"></span>
+            </p>
+            <p class="indent-0">
+                <span class="brown"></span>
+                <span class="black"></span>
+                <span class="lightblack"></span>
+                <span class="lightblack"></span>
+                <span class="lightblack"></span>
+                <span class="black"></span>
+                <span class="black"></span>
+                <span class="black"></span>
+                <span class="black"></span>
+                <span class="lightergrey"></span>
+                <span class="white"></span>
+                <span class="white"></span>
+                <span class="eartop"></span>
+                <span class="neck"></span>
+            </p>
+            <p class="indent-0">
+                <span class="lightblack"></span>
+                <span class="lightblack"></span>
+                <span class="lightblack"></span>
+                <span class="lightblack"></span>
+                <span class="lightblack"></span>
+                <span class="black"></span>
+                <span class="black"></span>
+                <span class="black"></span>
+                <span class="black"></span>
+                <span class="steelgrey"></span>
+                <span class="white"></span>
+                <span class="white"></span>
+                <span class="grey"></span>
+                <span class="greengrey"></span>
+                <span class="bright"></span>
+            </p>
+            <p class="indent-0">
+                <span class="lightblack"></span>
+                <span class="lightblack"></span>
+                <span class="lightblack"></span>
+                <span class="lightblack"></span>
+                <span class="black"></span>
+                <span class="black"></span>
+                <span class="black"></span>
+                <span class="black"></span>
+                <span class="black"></span>
+                <span class="black"></span>
+                <span class="lightgrey"></span>
+                <span class="lightergrey"></span>
+                <span class="black"></span>
+                <span class="grey"></span>
+                <span class="grey"></span>
+                <span id="white1"></span>
+            </p>
+            <p class="indent-0">
+                <span class="lightblack"></span>
+                <span class="lightblack"></span>
+                <span class="lightblack"></span>
+                <span class="lightblack"></span>
+                <span class="black"></span>
+                <span class="black"></span>
+                <span class="black"></span>
+                <span class="black"></span>
+                <span class="black"></span>
+                <span class="black"></span>
+                <span class="black"></span>
+                <span class="lightergrey"></span>
+                <span class="lightgrey"></span>
+                <span class="grey"></span>
+                <span class="steelgrey"></span>
+                <span class="black"></span>
+                <span class="lightgrey"></span>
+            </p>
+        </div>
 
-    <audio id="thanks" src="sounds/ThanksObama.m4r"></audio>
-    <audio id="ahhh" src="sounds/AhhhThanksObama.m4r"></audio>
-    <audio id="courage" src="sounds/ThankYouForYourCourage.m4r"></audio>
-    <audio id="america" src="sounds/TheAmericaTeam.m4r"></audio>
-    <audio id="delish" src="sounds/Too-Delicious.m4r"></audio>
-    <audio id="reset" src="sounds/BackToRealNews.m4r"></audio>
+        <button id="reset-btn">Reset!</button>
 
-	</body>
+        <img id="background" class="background" src="images/american-flag.png" alt="">
+        <img id="slider" class="slider" src="images/thankso.png" alt="">
+
+        <audio id="bubble" src="sounds/BubblePop.wav"></audio>
+        <audio id="thanks" src="sounds/ThanksObama.m4r"></audio>
+        <audio id="ahhh" src="sounds/AhhhThanksObama.m4r"></audio>
+        <audio id="courage" src="sounds/ThankYouForYourCourage.m4r"></audio>
+        <audio id="america" src="sounds/TheAmericaTeam.m4r"></audio>
+        <audio id="delish" src="sounds/Too-Delicious.m4r"></audio>
+        <audio id="reset" src="sounds/BackToRealNews.m4r"></audio>
+    </body>
 </html>
